@@ -34,7 +34,7 @@ public class NightActivity extends AppCompatActivity {
                         .setTitle("Вопрос")
                         .setMessage("Спишь?")
                         .setPositiveButton("Да", ((dialog, which) -> {
-                            System.exit(0);
+                            finishAffinity();
                         }))
                         .setNegativeButton("Нет", ((dialog, which) -> {
                             Intent intent = new Intent(NightActivity.this, MainActivity.class);
